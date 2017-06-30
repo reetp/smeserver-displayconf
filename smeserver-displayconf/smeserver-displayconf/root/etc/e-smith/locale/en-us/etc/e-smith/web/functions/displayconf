@@ -1,0 +1,102 @@
+<!-- vim: ft=xml ts=4 sw=4:
+-->
+<lexicon lang="en-us">
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>'Raw' display of accounts configuration</trans>
+    </entry>
+    <entry>
+        <base>FIRST_PAGE_DESCRIPTION</base>
+	    <trans><![CDATA[
+        <p>
+		This panel simply permit to display in a 'raw' format
+		the content of the accounts database. The column labels are simply
+		the record name, without explanation.<br>
+		This is useful if you want to work on theses data with a 
+		spreadsheet software.<br>
+		With most softwares, you just need to 'copy & paste' 
+		the table below.
+        ]]>
+        </trans>
+    </entry>
+    <entry>
+        <base>BUTTON_LABEL_DISPLAY</base>
+        <trans>New Display</trans>
+    </entry>
+    <entry>
+        <base>ALL</base>
+        <trans>All records</trans>
+    </entry>
+    <entry>
+        <base>USERS</base>
+        <trans>Users records</trans>
+    </entry>
+    <entry>
+        <base>GROUPS</base>
+        <trans>Groups records</trans>
+    </entry>
+    <entry>
+        <base>PSEUDONYMS</base>
+        <trans>Pseudonyms records</trans>
+    </entry>
+    <entry>
+        <base>PRINTERS</base>
+        <trans>Printers records</trans>
+    </entry>
+    <entry>
+        <base>IBAYS</base>
+        <trans>I-Bays records</trans>
+    </entry>
+    <entry>
+        <base>MISC</base>
+        <trans>All others records</trans>
+    </entry>
+    <entry>
+        <base>LABEL_TYPE_TO_DISPLAY</base>
+        <trans>What kind of record do you want to display ?</trans>
+    </entry>
+    <entry>
+        <base>Configuration</base>
+        <trans>Configuration</trans>
+    </entry>
+    <entry>
+        <base>DisplayConfiguration</base>
+        <trans>Display Accounts Configuration</trans>
+    </entry>
+	<entry>
+		<base>LABEL_DISPLAY_UNDEF</base>
+		<trans>How should undefined fields be presented ?</trans>
+	</entry>
+	<entry>
+		<base>LABEL_DISPLAY_BLANK</base>
+		<trans>How should empty fields be presented ?</trans>
+	</entry>
+	<entry>
+		<base>BLANK</base>
+		<trans>A blank field (nothing !)</trans>
+	</entry>
+	<entry>
+		<base>QUOTES</base>
+		<trans>Two single quotes( ' ' )</trans>
+	</entry>
+	<entry>
+		<base>EMPTY</base>
+		<trans><![CDATA[the word : &lt;Empty&gt;]]></trans>
+	</entry>
+	<entry>
+		<base>UNDEF</base>
+		<trans><![CDATA[the word : &lt;Undef&gt;]]></trans>
+	</entry>
+	<entry>
+		<base>IS_EMPTY</base>
+		<trans><![CDATA[&lt;Empty&gt;]]></trans>
+	</entry>
+	<entry>
+		<base>IS_UNDEF</base>
+		<trans><![CDATA[&lt;Undef&gt;]]></trans>
+	</entry>
+	<entry>
+		<base>DOWNLOAD_FILE</base>
+		<trans>Download the result as CSV File</trans>
+	</entry>
+</lexicon>

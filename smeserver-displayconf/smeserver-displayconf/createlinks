@@ -1,0 +1,30 @@
+#!/usr/bin/perl -w
+# This script creates the symlinks needed by this RPM
+# Specific support exists to create symlinks within e-smith web "panels"
+# and for links from named "events" directories into the "actions" directory
+
+sub safe_symlink {
+    my ($from, $to) = @_;
+    use File::Basename;
+    use File::Path;
+    mkpath(dirname($to));
+    unlink($to);
+    symlink($from, $to) or die "Can't create symlink from $from to $to: $!";
+}
+
+sub panel_link
+{
+    my ($function, $panel) = @_;
+
+    my $cgibin = "root/etc/e-smith/web/panels/$panel/cgi-bin";
+
+    safe_symlink("../../../functions/$function",
+            "$cgibin/$function")
+}
+
+#--------------------------------------------------
+# functions for user panel
+#--------------------------------------------------
+my $panel = "manager";
+panel_link("displayconf", $panel);
+

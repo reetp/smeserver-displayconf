@@ -1,0 +1,102 @@
+<!-- vim: ft=xml ts=4 sw=4:
+-->
+<lexicon lang="en-us">
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>Affichage 'brut' de la base des comptes</trans>
+    </entry>
+    <entry>
+        <base>FIRST_PAGE_DESCRIPTION</base>
+	    <trans><![CDATA[
+        <p>
+		Ce panneau vous permet simplement d'afficher en format 'brut'
+		le contenu de la base des comptes. Les labels de colonnes sont 
+        simplement les noms des enregistrements.<br>
+		Ce format peut être pratique si vous souhaitez exporter ces
+		données vers un tableur.<br>
+		Pour la plupart des tableurs, il suffit de 'copier & coller'
+		le tableau se trouvant plus bas.
+        ]]>
+        </trans>
+    </entry>
+    <entry>
+        <base>BUTTON_LABEL_DISPLAY</base>
+        <trans>Nouvel affichage</trans>
+    </entry>
+    <entry>
+        <base>ALL</base>
+        <trans>Tous les enregistrements</trans>
+    </entry>
+    <entry>
+        <base>USERS</base>
+        <trans>Enregistrements Utilisateurs</trans>
+    </entry>
+    <entry>
+        <base>GROUPS</base>
+        <trans>Enregistrements Groupes</trans>
+    </entry>
+    <entry>
+        <base>PSEUDONYMS</base>
+        <trans>Enregistrements Pseudonymes</trans>
+    </entry>
+    <entry>
+        <base>PRINTERS</base>
+        <trans>Enregistrements Imprimantes</trans>
+    </entry>
+    <entry>
+        <base>IBAYS</base>
+        <trans>Enregistrements I-Bays</trans>
+    </entry>
+    <entry>
+        <base>MISC</base>
+        <trans>Les autres enregistrements</trans>
+    </entry>
+    <entry>
+        <base>LABEL_TYPE_TO_DISPLAY</base>
+        <trans>Quel type d'enregistrement voulez vous afficher ?</trans>
+    </entry>
+    <entry>
+        <base>Configuration</base>
+        <trans>Configuration</trans>
+    </entry>
+    <entry>
+        <base>DisplayConfiguration</base>
+        <trans>Affichage base des comptes</trans>
+    </entry>
+    <entry>
+        <base>LABEL_DISPLAY_UNDEF</base>
+        <trans>Comment afficher les champs non définis ?</trans>
+    </entry>
+    <entry>
+        <base>LABEL_DISPLAY_BLANK</base>
+        <trans>Comment afficher les champs vides ?</trans>
+    </entry>
+    <entry>
+        <base>BLANK</base>
+        <trans>Un champ vide (rien !)</trans>
+    </entry>
+    <entry>
+        <base>QUOTES</base>
+        <trans>Deux simples quotes( ' ' )</trans>
+    </entry>
+    <entry>
+        <base>EMPTY</base>
+        <trans><![CDATA[le mot : &lt;Vide&gt;]]></trans>
+    </entry>
+    <entry>
+        <base>UNDEF</base>
+        <trans><![CDATA[les mots : &lt;Non Défini&gt;]]></trans>
+    </entry>
+    <entry>
+        <base>IS_EMPTY</base>
+        <trans><![CDATA[&lt;Vide&gt;]]></trans>
+    </entry>
+    <entry>
+        <base>IS_UNDEF</base>
+        <trans><![CDATA[&lt;Non Défini&gt;]]></trans>
+    </entry>
+    <entry>
+        <base>DOWNLOAD_FILE</base>
+        <trans>Télécharger le résultat en format CSV</trans>
+    </entry>
+</lexicon>

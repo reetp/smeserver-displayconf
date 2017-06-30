@@ -1,0 +1,100 @@
+#!/usr/bin/perl -wT
+# vim: ft=xml ts=4 sw=4 et:
+#----------------------------------------------------------------------
+# heading     : Configuration
+# description : DisplayConfiguration
+# navigation  : 6000 6810
+#----------------------------------------------------------------------
+#----------------------------------------------------------------------
+# copyright (C) 2004 Schirrm's Studio
+# copyright (C) 2002 Mitel Networks Corporation
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
+#----------------------------------------------------------------------
+
+use strict;
+use esmith::FormMagick::Panel::displayconf;
+my $form = esmith::FormMagick::Panel::displayconf->new();
+# Uncomment the next line for debugging purposes.
+# $form->debug(1);
+$form->display();
+
+
+__DATA__
+<form 
+    title="FORM_TITLE" 
+    header="/etc/e-smith/web/common/head.tmpl"
+    footer="/etc/e-smith/web/common/foot.tmpl">
+
+    <!-- page 0 -->
+    <page 
+        name="First"
+        pre-event="print_status_message()"
+        post-event="display_form()">
+        <description>FIRST_PAGE_DESCRIPTION</description>
+        <field
+            id="chk_all"
+            type="checkbox">
+            <label>ALL</label>
+        </field>
+        <field
+            id="chk_users"
+            type="checkbox">
+            <label>USERS</label>
+        </field>
+        <field
+            id="chk_groups"
+            type="checkbox">
+            <label>GROUPS</label>
+        </field>
+        <field
+            id="chk_ibays"
+            type="checkbox">
+            <label>IBAYS</label>
+        </field>
+        <field
+            id="chk_printers"
+            type="checkbox">
+            <label>PRINTERS</label>
+        </field>
+        <field
+            id="chk_pseudonyms"
+            type="checkbox">
+            <label>PSEUDONYMS</label>
+        </field>
+        <field
+            id="chk_misc"
+            type="checkbox">
+            <label>MISC</label>
+        </field>
+        <field
+            id="displayundef"
+            type="select"
+            options="'BLANK','UNDEF'"
+            value='BLANK'>
+            <label>LABEL_DISPLAY_UNDEF</label>
+        </field>
+        <field
+            id="displayblank"
+            type="select"
+            options="'BLANK','QUOTES','EMPTY'"
+            value='QUOTES'>
+            <label>LABEL_DISPLAY_BLANK</label>
+        </field>
+
+        <subroutine src="display_button()" />
+        <subroutine src="display_conf()" />
+    </page>
+</form>
